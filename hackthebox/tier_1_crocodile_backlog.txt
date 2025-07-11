@@ -11,4 +11,4 @@ ftp 10.129.1.15
 nmap -sV -p80 10.129.1.15
 
 # Task 8, 9
-gobuster dir --url 10.129.1.15 -w /nix/store/g8k7x7y4zb6y41ngrvw1cdy7ms553jzw-wordlists/share/wordlists/seclists/Discovery/Web-Content/common.txt -x php
+gobuster dir --url 10.129.1.15 -w $(wordlists_path)/seclists/Discovery/Web-Content/common.txt -x php
