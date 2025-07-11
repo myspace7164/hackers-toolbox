@@ -29,3 +29,12 @@ default port 445
 smbclient utility:
 use -L to list available shares
 use get to download files from share
+
+### Redis
+In-memory database
+redis-cli is a command line utility to interact with redis server
+
+use -h to specify hostname
+use info to obtain information and statistics about redis server
+use select to select the desired database
+use keys * to obtain all keys in a database
