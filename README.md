@@ -7,12 +7,17 @@ vm: virtual machine
 terminal: tool to ineract with the operating system (issue commands via command line, start vpn connection)
 openvpn: tool to from VPN connection
 ping: tool to test connection to target with ICMP echo request
-nmap: tool for finding open ports on target
 directory: folder in web-application terminology
+
+### nmap
+tool for finding open ports on target
+use -sV to determine service/version info
+use -O to enable OS detection
 
 ### telnet 
 default port 23/tcp
 root user is able to log into target over telnet with blank password
+you can use telnet to get information on what kind of service is running on a port
 
 ### File Transfer Protocol (ftp)
 default port 21
@@ -44,9 +49,24 @@ use keys * to obtain all keys in a database
 SQL injection is one of the most common types of SQL vulnerabilites
 A03:2021-Injection is the 2021 OWASP Top 10 classification for this vulnerability
 
-MySQL:
-Use # to comment out rest of a line
+use * to display everything inside a table within a query
+; is used to end each query
+show databases; to show all databases
 
+MySQL:
+username root can be used to log in to MariaDB instance without providing a password
+use # to comment out rest of a line
+use -u to specify username
+
+Default databeses found on most instances:
+- mysql
+- information_schema
+- performance_schema
+- sys
+
+use <database_name>; to select database
+show tables; to show all available tables in used database
+select * from <table_name>; to show contents of table
 
 ### HTTP
 Code 404 given for not found errors
