@@ -22,3 +22,10 @@ Code 230 when login successful
 use dir to list directories
 use ls to list files
 use get to download a file
+
+### Server Message Block (smb)
+default port 445
+
+smbclient utility:
+use -L to list available shares
+use get to download files from share
