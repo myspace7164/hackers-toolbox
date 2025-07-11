@@ -12,3 +12,13 @@ nmap: tool for finding open ports on target
 ### telnet 
 default port 23/tcp
 root user is able to log into target over telnet with blank password
+
+### File Transfer Protocol (ftp)
+default port 21
+sftp has similar functionality but is more secure as it is an extension to ssh
+username anonymous can be used to log in without having an account
+Code 230 when login successful
+
+use dir to list directories
+use ls to list files
+use get to download a file
