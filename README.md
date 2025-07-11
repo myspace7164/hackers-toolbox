@@ -1,13 +1,14 @@
 # hackers-toolbox
 A collection of scripts, tools and notes for everything cybersec with a cheesy name
 
-## Basics of pentesting
+## Basics of pen-testing
 
 vm: virtual machine
 terminal: tool to ineract with the operating system (issue commands via command line, start vpn connection)
 openvpn: tool to from VPN connection
 ping: tool to test connection to target with ICMP echo request
 nmap: tool for finding open ports on target
+directory: folder in web-application terminology
 
 ### telnet 
 default port 23/tcp
@@ -38,3 +39,21 @@ use -h to specify hostname
 use info to obtain information and statistics about redis server
 use select to select the desired database
 use keys * to obtain all keys in a database
+
+### Structured Query Language (SQL)
+SQL injection is one of the most common types of SQL vulnerabilites
+A03:2021-Injection is the 2021 OWASP Top 10 classification for this vulnerability
+
+MySQL:
+Use # to comment out rest of a line
+
+
+### HTTP
+Code 404 given for not found errors
+
+### HTTPS
+standar port 445
+
+### Gobuster
+Tool to brute force directories on a webserver
+Use dir to discover directories
