@@ -5,5 +5,7 @@ pkgs.mkShell {
 		inetutils
 		nmap
 		mysql84
+		gobuster
+		wordlists
   ];
 }
