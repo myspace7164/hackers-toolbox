@@ -13,6 +13,7 @@ directory: folder in web-application terminology
 tool for finding open ports on target
 use -sV to determine service/version info
 use -O to enable OS detection
+use -sC to use default scripts during scan
 
 ### telnet 
 default port 23/tcp
@@ -24,6 +25,13 @@ default port 21
 sftp has similar functionality but is more secure as it is an extension to ssh
 username anonymous can be used to log in without having an account
 Code 230 when login successful
+
+sometimes you'll get a message like:
+```
+200 PORT command successful. Consider using PASV.
+425 Failed to establish connection.
+```
+in which case you can use the passive command
 
 use dir to list directories
 use ls to list files
@@ -77,3 +85,4 @@ standar port 445
 ### Gobuster
 Tool to brute force directories on a webserver
 Use dir to discover directories
+Use -x when looking for specific filetypes

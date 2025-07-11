@@ -1,0 +1,14 @@
+# Task 1
+nmap --help | less
+
+# Task 2, 3
+nmap -sC -p21 10.129.1.15
+
+# Task 4, 5, 6
+ftp 10.129.1.15
+
+# Task 7
+nmap -sV -p80 10.129.1.15
+
+# Task 8, 9
+gobuster dir --url 10.129.1.15 -w /nix/store/g8k7x7y4zb6y41ngrvw1cdy7ms553jzw-wordlists/share/wordlists/seclists/Discovery/Web-Content/common.txt -x php
